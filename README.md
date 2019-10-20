@@ -29,7 +29,8 @@
 
 ### Prerequisites
 
-- GitHub project secret named NUGET_TOKEN with a valid NuGet API key is set
+- GitHub project secret named NUGET_TOKEN with a valid NuGet API key is set  
+- Github repository name must match the name of the library project  
 - AssemblyVersion of the library matches the GitHub Release version tag  
   Rules: **MAJOR.MINOR.PATCH must match**  
   Example: **AssemblyVersion: 0.1.1**  
