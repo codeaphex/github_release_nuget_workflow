@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- https://docs.microsoft.com/en-us/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework -->
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/codeaphex/github_release_nuget_workflow</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This library just exist to test the github workflow included in the repository</description>
+    <releaseNotes>None</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>github action workflow nuget pack</tags>
+  </metadata>
+</package>
