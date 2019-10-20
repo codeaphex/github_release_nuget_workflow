@@ -9,7 +9,6 @@ jobs:
     name: Create NuGet package
     # Virtual environment: https://help.github.com/en/articles/virtual-environments-for-github-actions
     runs-on: windows-latest
-    needs: versioncheck
     steps:
       - name: Checkout
         uses: actions/checkout@v1
