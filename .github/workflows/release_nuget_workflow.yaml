@@ -55,7 +55,7 @@ jobs:
         run: |
           echo %NUSPECPATH%
           echo %SUFFIX%
-          if defined SUFFIX (nuget pack %NUSPECPATH% -build -Prop Configuration=Release -OutputDirectory "D:\\package\\")else (nuget pack %NUSPECPATH% -Suffix %SUFFIX% -build -Prop Configuration=Release -OutputDirectory "D:\\package\\")
+          if defined SUFFIX (nuget pack %NUSPECPATH% -build -Suffix %SUFFIX% -Prop Configuration=Release -OutputDirectory "D:\\package\\")else (nuget pack %NUSPECPATH% -build -Prop Configuration=Release -OutputDirectory "D:\\package\\")
 
       - name: nuget publish
         run: nuget push D:\package\github_release_nuget_workflow.%TAG_NAME%.nupkg ${{secrets.NUGET_TOKEN}} -Source https://api.nuget.org/v3/index.json
