@@ -10,4 +10,5 @@
 ## Features
 
 - Create and push a NuGet package on a Github Release
+- Supports Semantic Versioning 2.0.0 for pre-release versions
 
