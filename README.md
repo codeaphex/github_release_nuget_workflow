@@ -6,7 +6,7 @@
 
 ### Workflow
 
-![Workflow Badge](https://github.com/codeaphex/github_release_nuget_workflow/workflows/Generate%20NuGet%20package/badge.svg)
+[![Workflow Badge](https://github.com/codeaphex/github_release_nuget_workflow/workflows/Generate%20NuGet%20package/badge.svg)](https://github.com/codeaphex/github_release_nuget_workflow/blob/master/.github/workflows/release_nuget_workflow.yaml)
 
 ### Stable version
 
