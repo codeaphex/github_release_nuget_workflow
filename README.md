@@ -19,11 +19,20 @@
 ![Nuget (with prereleases)](https://img.shields.io/nuget/vpre/github_release_nuget_workflow?label=dev%20nuget&logo=nuget)
 
 
+## Prerequisites
 
-
+- GitHub project secret named NUGET_TOKEN with a valid NuGet API key is set
+- AssemblyVersion of the library matches the GitHub Release version tag  
+  Rules: **MAJOR.MINOR.PATCH must match**  
+  Example: **AssemblyVersion: 0.1.1**  
+  matches the following GitHub release versions:  
+  **0.1.1**  
+  **v0.1.1**  
+  **0.1.1-alpha**  
+  **v0.1.1-beta.2**    
 
 ## Features
 
 - Create and push a NuGet package on a Github Release
-- Supports Semantic Versioning 2.0.0 for pre-release versions
+- Supports Semantic Versioning 2.0.0 for prerelease packages
 
