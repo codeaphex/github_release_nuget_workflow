@@ -31,7 +31,7 @@ jobs:
       - name: Get version and suffix
         run: |
           echo %TAG_NAME%
-          for /f "tokens=1,2 delims=-" %%a in ("%TAG_NAME%") do set version=%%a&set suffix=%%b
+          for /f "tokens=1,2 delims=-" %a in ("%TAG_NAME%") do set version=%a&set suffix=%b
           echo %version%
           echo %suffix%
           echo ::set-env name=VERSION::%version%
@@ -44,8 +44,8 @@ jobs:
           echo ::set-env name=NUSPECPATH::%nuspecpath%
 
       - name: Install NuGet
-        run: choco install nuget.commandline -y 
-
+        run: choco install nuget.commandline -y
+        
       - name: NuGet restore
         run: nuget restore
 
