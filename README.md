@@ -43,6 +43,7 @@
 ### Getting started
 
 1. Copy workflow
+1. Add nuspec
 1. Set secret
 1. Check Assembly version
 1. Push
